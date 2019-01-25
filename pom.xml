@@ -15,7 +15,21 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <finalName>webapp</finalName>
   </build>
+<distributionManagement>
+  <repository>
+     <id>deployment</id>
+     <name>Internal Releases</name>
+     <url>http://192.168.0.16:8090/nexus-2.11.4-01/content/repositories/releases/</url>
+  </repository>
+  <snapshotRepository>
+     <id>deployment</id>
+     <name>Internal Releases</name>
+     <url>http://192.168.0.16:8090/nexus-2.11.4-01/content/repositories/snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
+
 </project>
