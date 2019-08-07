@@ -8,7 +8,7 @@ RUN yum install wget -y
 WORKDIR /opt
 RUN wget http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.43/bin/apache-tomcat-8.5.43.tar.gz
 RUN tar -xvf apache-tomcat-8.5.43.tar.gz
-RUN cp -R /opt/apache-tomcat-8.5.43.tar.gz /opt/tomcat
+RUN cp -R /opt/apache-tomcat-8.5.43 /opt/tomcat
 
 WORKDIR /opt/tomcat/webapps
 COPY target/webapp.war .
