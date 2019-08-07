@@ -15,7 +15,7 @@ COPY target/webapp.war
 
 EXPOSE 8080
 
-chmod -R 777 /opt/tomcat/webapps
+RUN chmod -R 777 /opt/tomcat/webapps
 
 ENTRYPOINT ["/opt/tomcat/bin/catalina.sh", "run"]
 
